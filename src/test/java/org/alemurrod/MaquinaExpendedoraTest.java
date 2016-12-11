@@ -23,6 +23,12 @@ public class MaquinaExpendedoraTest {
         Assert.assertEquals(true, me.getCorriente());
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testCrearMaquinaNumerosNegativos(){
+        
+        MaquinaExpendedora me = new MaquinaExpendedora(-50, -1);
+    }
+
     @Test
     public void testSacarGalletaConLaMaquinaApagada(){
         

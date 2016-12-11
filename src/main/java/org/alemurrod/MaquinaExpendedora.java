@@ -9,6 +9,9 @@ public class MaquinaExpendedora {
 
 	public MaquinaExpendedora(Integer galletas, Integer dinero){
 		
+		checkGalletas(galletas);
+		checkDinero(dinero);
+
 		this.galletas = galletas;
 		this.dinero = dinero;
 		this.corriente = false; //cuando se crea, siempre apagada
@@ -65,5 +68,19 @@ public class MaquinaExpendedora {
 
 	public String toString(){
 		return "Maquina Expendedora - Modelo JGKR 3000. Número de galletas: "+getGalletas()+". Cambio actual: "+getDinero()+" euros.";
+	}
+
+
+	//Checks
+	public void checkGalletas(Integer galletas){
+		if (galletas < 0 ) {
+			throw new IllegalArgumentException("Las galletas no pueden ser negativas.");
+		}
+	}
+	
+	public void checkDinero(Integer dinero){
+		if (dinero < 0 ) {
+			throw new IllegalArgumentException("El dinero no puede ser negativo.");
+		}	
 	}
 }
