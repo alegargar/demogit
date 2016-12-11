@@ -4,7 +4,7 @@ import java.lang.IllegalArgumentException;
 public class MaquinaExpendedora {
 
 	Integer galletas;
-	Integer dinero; //cambio actual en la maquina expendedora 
+	Integer dinero; //cambio actual en la maquina expendedora, seria el dinero que queda en la maquina
 	boolean corriente; //corriente electrica
 
 	public MaquinaExpendedora(Integer galletas, Integer dinero){
