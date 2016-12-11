@@ -53,4 +53,13 @@ Merge made by the 'recursive' strategy.
 
 * El comando anterior le dice a git que cuando encuentre un conflicto se quede con lo que haya en el archivo de la rama en la que estemos en ese momento (ours = nuestr@). En este caso lo hice desde la rama master, entonces se quedaron los cambios de la rama master en la parte donde había conflicto.
 
+
+
+---
+
+A la hora de volver atrás cuando causé el conflicto lo hice de mala manera, usando para ello git reser hard con la id del commit al que quería volver, debido a esto han salido 2 o 3 commits más de lo que esperaba. 
+Aunque al final conseguí resolver el conflicto de manera correcta, para la siguiente vez ya se los pasos a seguir y espero actuar de manera diferente.
+
+
+
 by: Alejandro Murillo Rodríguez.
